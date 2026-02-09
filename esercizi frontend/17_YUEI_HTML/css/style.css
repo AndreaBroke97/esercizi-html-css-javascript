@@ -1,0 +1,142 @@
+/* Reset di base per evitare margini indesiderati del browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Usa min-height invece di un'altezza fissa enorme. 
+       100vh significa "100% dell'altezza della finestra visibile" */
+    min-height: 100vh;
+    background-color: rgb(7, 175, 218);
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 1200px; /* Limita la larghezza massima per una migliore leggibilità */
+}
+/* Header / Titolo */
+.TITOLO {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Leggero sfondo per staccare */
+    margin-bottom: 20px;
+}
+
+.TITOLO h3 {
+    font-size: 24px;
+    color: white; /* Testo bianco per contrasto sul blu */
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px #000000; /* Ombra per renderlo leggibile */
+}
+
+main {
+    display: flex;
+    justify-content: space-between; /* Spinge la leftbar a sinistra e la rightbar a destra */
+    align-items: flex-start;        /* Le allinea in alto */
+    width: 100%;
+}
+/* Sidebar di navigazione */
+.leftbar {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 250px; /* Diamo una larghezza fissa alla barra laterale */
+    background-color: rgba(0, 0, 0, 0.2); /* Sfondo scuro semitrasparente */
+    border-radius: 10px 10px 10px 10px; /* Angoli arrotondati a destra */
+    /* 1. Inserisci il percorso della tua immagine */
+    background-image: url('https://i.pinimg.com/1200x/d1/9a/cf/d19acf7a8b473250de18d1dfaf7fb4e7.jpg'); 
+    
+    /* 2. Regola come l'immagine si adatta alla barra */
+    background-size: cover;       /* Fondamentale: copre tutta la barra senza deformarsi */
+    background-position: center;  /* Centra la foto nella barra */
+    background-repeat: no-repeat; /* Evita che la foto si ripeta se la barra è molto lunga */
+
+    /* 3. Mantieni o regola la trasparenza per far risaltare il testo */
+    /* Questo crea un "velo" scuro sopra la foto per leggere meglio il giallo */
+    background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: multiply;
+    margin-left: 10px;
+    margin-top: 20px;
+   
+}
+
+.leftbar a {
+    text-decoration: none;
+    padding: 15px 20px;
+    /* Ho ridotto il margine: 120px era tantissimo! 
+       20px è sufficiente per distanziarli bene. */
+    margin-bottom: 20px; 
+    color: rgb(255, 187, 0); /* Giallo Hero */
+    font-size: 18px;
+    font-weight: bold;
+    border-left: 5px solid transparent; /* Preparazione per l'hover */
+    transition: all 0.3s ease; /* Animazione fluida */
+    
+    
+}
+
+
+.leftbar a:hover {
+    text-decoration: none; /* Tolgo la sottolineatura standard */
+    background-color: rgb(255, 187, 0); /* Sfondo giallo */
+    color: rgb(7, 175, 218); /* Testo blu */
+    border-left: 5px solid white; /* Bordo decorativo */
+    border-radius: 5px;
+}
+
+.rightbar{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    padding: 50px;
+    width: 250px; /* Diamo una larghezza fissa alla barra laterale */
+    height: 497px;
+    background-color: rgba(0, 0, 0, 0.2); /* Sfondo scuro semitrasparente */
+    border-radius: 10px 10px 10px 10px; /* Angoli arrotondati a destra */
+    /* 1. Inserisci il percorso della tua immagine */
+    background-image: url('https://i.pinimg.com/1200x/d1/9a/cf/d19acf7a8b473250de18d1dfaf7fb4e7.jpg'); 
+    margin-top: 20px;
+    /* 2. Regola come l'immagine si adatta alla barra */
+    background-size: cover;       /* Fondamentale: copre tutta la barra senza deformarsi */
+    background-position: center;  /* Centra la foto nella barra */
+    background-repeat: no-repeat; /* Evita che la foto si ripeta se la barra è molto lunga */
+
+    /* 3. Mantieni o regola la trasparenza per far risaltare il testo */
+    /* Questo crea un "velo" scuro sopra la foto per leggere meglio il giallo */
+    background-color: rgba(0, 0, 0, 0.4); 
+    background-blend-mode: multiply;
+   
+    
+   
+}
+
+.rightbar a {
+    text-decoration: none;
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
+    padding: 20px 20px;
+    /* Ho ridotto il margine: 120px era tantissimo! 
+       20px è sufficiente per distanziarli bene. */
+    margin-bottom: 20px; 
+    color: rgb(255, 187, 0); /* Giallo Hero */
+    font-size: 18px;
+    font-weight: bold;
+    border-right: 5px solid transparent; /* Preparazione per l'hover */
+    transition: all 0.3s ease; /* Animazione fluida */
+  
+     
+}
+
+.rightbar a:hover{
+    text-decoration: none; /* Tolgo la sottolineatura standard */
+    background-color: rgb(255, 187, 0); /* Sfondo giallo */
+    color: rgb(7, 175, 218); /* Testo blu */
+    border-right: 5px solid white; /* Bordo decorativo */
+    border-radius: 5px;
+}
