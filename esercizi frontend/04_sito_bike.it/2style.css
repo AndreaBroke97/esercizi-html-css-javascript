@@ -1,0 +1,126 @@
+.margin{
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.boxpadre{
+    border: 2px solid gray; /* Il tuo bordo */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 5px;
+   
+    
+}
+
+.boxpadre2{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(128, 128, 128); /* Il tuo bordo */
+    border-radius: 25px;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+
+}
+
+.card1{
+    border: 2px solid red; /* Il tuo bordo */
+    border-radius: 30px;
+    width: 160px;
+    height: 190px;
+    background-color: red;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+.boxpadre3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.card2{
+    border: 2px solid green; /* Il tuo bordo */
+    border-radius: 15px;
+    width: 60px;
+    height: 80px;
+    background-color: green;
+    margin-top: 10px;
+}
+
+
+.card3{
+    border: 2px solid yellow; /* Il tuo bordo */
+    border-radius: 15px;
+    width: 60px;
+    height: 80px;
+    background-color: yellow;
+}
+
+
+.boxtitolo{
+    display: flex;
+    align-items: flex-start;        /* Allinea tutto in alto */
+    font-family: sans-serif;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.titolo hr {
+    margin-top: 114px;
+    color: #333;
+    
+}
+
+.titolo{
+    font-family: sans-serif;
+    font-size: 10px;
+    padding: 30px 30px;
+    margin-left: 40px;
+}
+
+.titolo h3 {
+    color: rgba(19, 19, 19, 0.678);
+    font-size: 15px;
+}
+
+.riquadrocapo1{
+    display: flex;                  /* Mette i pallini uno accanto all'altro */
+    gap: 10px;                      /* Spazio tra i pallini */
+    flex-direction: row; /* Li mette uno accanto all'altro */
+    gap: 15px;           /* Spazio tra un pallino e l'altro */
+    margin-top: auto;
+   
+}
+
+.riquadro1 {
+    border: 2px solid red; /* Il tuo bordo */
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+  
+}
+
+.riquadro2{
+    border: 2px solid yellow; /* Il tuo bordo */
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+}
+
+.riquadro3{
+    border: 2px solid blue; /* Il tuo bordo */
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+

@@ -1,0 +1,23 @@
+/*phone*/
+.box{
+    /*stile base mobile*/
+    
+    color: green;
+
+}
+
+/*tablet 768px*/
+@media (min-width: 768px){
+.box{
+    color: yellow;
+}
+}
+
+/*dekstop*/
+@media (min-width: 1024px){
+.box{
+    color: red;
+    width: 200px;
+    height: 200px;
+}
+}
