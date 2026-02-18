@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 50px;
+    box-sizing: border-box; 
+    /*che blocca il contenuto 200px sono quelli
+    è adatta il contenuto se si aggiunge padding o border
+    il browser riduce automaticamente lo spazio*/
+}
+
+body {
+    font-family: sans-serif;
+    width: auto;
+    height: auto;
+}
+
+.contenitore {
+    display: flex; /*comando iniziale per rendere flessibile il contenitore padre*/
+    flex-direction: row;
+    justify-content: center; /*centra o sposta orizzontalmente*/
+    align-items: center; /*centra o sposta verticalmente*/
+
+    border: 2px solid black;
+    border-radius: 20px;
+
+    width: auto; /*altezza e larghezza automatica in base a cosa metto dentro*/
+    height: auto;
+}
+
+.box1 p {
+    display: inline-block;
+
+    border: 1px solid gray;
+    background-color: red;
+
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small; 
+
+    position: relative;
+    
+}
+
+
+
+
+@media (min-width: 480px) {
+    .container {
+        flex-direction: row;
+        width: auto;
+        height: auto;
+    }
+    .box1 p{
+    background-color: rgb(4, 0, 255);
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+    font-size: 19px;  
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        width: auto;
+        height: auto;
+    }
+    .box1 p{
+    background-color: rgb(255, 0, 212);
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    font-size: 25px; 
+    }
+}
