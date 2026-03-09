@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 3000px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* MODIFICA CHIAVE: Invece di center, usiamo flex-start */
+    align-items: flex-start; 
+    border: 1px solid gray;
+    border-radius: 20px;
+    height: 1000px;
+    /* Nota: 2000px creerà uno scroll orizzontale. Se non è voluto, usa width: 100%; o width: auto; */
+    width: 2000px; 
+    margin-top: 500px;
+}
+
+.box1{
+    
+    position: sticky;
+    top: 40px;
+    left: 40px; /* I box si fermeranno a 20px dal margine superiore dello schermo */
+    padding: 10px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 700px;
+    height: 400px;
+    /* Aggiungo un piccolo margine per staccarli l'uno dall'altro come nell'immagine */
+    margin-right: 5px;
+    
+}

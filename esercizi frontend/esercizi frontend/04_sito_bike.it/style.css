@@ -1,0 +1,446 @@
+.margin {
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/* --- IMPOSTAZIONI GENERALI --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* Assicura un font leggibile ovunque */
+}
+
+.nav1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  background-color: rgba(236, 236, 236, 0.496);
+  border: 1px solid rgb(235, 235, 235);;
+  width: auto;
+  height: 40px;
+}
+
+.nav2 a {
+display: inline-block;
+  border-radius: 3px; /* Arrotonda un po' di più come in foto */
+  /* --- MODIFICA QUESTI VALORI PER INGRANDIRE --- */
+  padding: 3px 6px;  /* Il primo valore è sopra/sotto, il secondo è destra/sinistra */
+  /* -------------------------------------------- */
+  transition: all 0.3s ease;
+  color: rgba(0, 0, 0, 0.82);
+  text-decoration: none;
+  margin-right: 15px; /* Ridotto leggermente per compensare il padding più grande */
+  font-size: 14.5px;
+  background-color: transparent; /* Di base è invisibile */
+}
+
+.nav2 a:hover {
+  cursor: pointer;
+  background-color: rgba(228, 226, 226, 0.818); /* Questo fa apparire la "bolla" bianca */
+  color: #000;
+}
+
+.nav3bike {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+
+.nav4bike img {
+  width: 170px;
+  height: 40;
+  padding: 15px 15px;
+}
+
+.search {
+  /* Colori e Sfondo */
+  background-color: #8cc63f; /* Il verde mela dell'immagine */
+  color: #333333;            /* Testo grigio scuro/nero */
+  
+  /* Layout e Spazi */
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;       /* Angoli arrotondati */
+  
+  /* Font */
+  font-family: sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.icon {
+  font-size: 24px;           /* Lente leggermente più grande del testo */
+  margin-right: 8px;         /* Spazio tra lente e parola Cerca */
+  font-weight: bold;
+  transform: rotate(-10deg); /* Leggera inclinazione per somigliare all'originale */
+}
+
+.bar {
+  display: flex;
+  flex
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px; /* Un po' di padding serve sempre */
+  gap: 60px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  flex: 1;
+}
+
+.hero-image {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  /* Ho rimosso width/height fissi per evitare rotture su schermi medi */
+}
+.hero-image img {
+  max-width: 100%; /* L'immagine si adatta al contenitore */
+  height: auto;
+}
+
+/* --- SEZIONE 1: MAINDESCRIZIONE (Cos'è Bikeit) --- */
+.MAINDESCRIZIONE {
+  display: flex;
+  flex-direction: row; /* PC: Affiancati */
+  justify-content: space-between;
+  margin-top: 140px;
+  padding: 0 30px; /* Padding laterale di sicurezza */
+  gap: 40px;
+  align-items: flex-start; /* Allinea in alto */
+}
+
+.SEZIONE1 {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  flex: 1;
+}
+
+.SEZIONE1 a {
+  color: rgba(107, 204, 16, 0.63);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.PADREGRUPPO {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end; /* PC: Allinea a DESTRA */
+  text-align: right; /* PC: Testo a DESTRA */
+  flex: 1;
+}
+
+.GRUPPO1 h1,
+.GRUPPO2 h1,
+.GRUPPO3 h1,
+.GRUPPO4 h1,
+.GRUPPO5 h1 {
+  margin: 0 0 15px 0;
+  font-size: 25px;
+}
+
+.GRUPPO1,
+.GRUPPO2,
+.GRUPPO3,
+.GRUPPO4,
+.GRUPPO5 {
+  font-size: medium;
+}
+
+hr {
+  margin-top: 50px;
+  border: 0;
+  border-top: 1px solid #ccc; /* Uno stile più pulito per la linea */
+}
+
+/* --- SEZIONE 2: COME FUNZIONA (Mobile First Logic) --- */
+.PADRESEZIONE2 {
+  text-align: center;
+  font-size: larger;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+/* Stile base (Mobile): Colonna */
+.PADREPADRE2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 30px;
+  gap: 50px;
+}
+
+.riquadro1,
+.riquadro2,
+.riquadro3,
+.riquadro4 {
+  font-size: small;
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.box1 {
+  width: 100px;
+  height: 70px;
+  background-color: red;
+  margin: 0 auto 20px auto;
+}
+
+/* --- SEZIONE 3: GUIDE E SUGGERIMENTI --- */
+.PADRESEZIONE3 {
+  font-size: larger;
+  padding: 30px 30px;
+  margin-top: 100px;
+}
+
+.PADREPADRE3 {
+  display: flex;
+  flex-direction: row; /* PC: Riga */
+  justify-content: space-between;
+  padding: 5px 5px;
+  gap: 30px;
+  font-family: sans-serif;
+  margin-bottom: 110px;
+}
+
+.the1 a,
+.the2 a,
+.the3 a,
+.the4 a {
+  font-size: medium;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(58, 58, 58);
+  flex: 1;
+  min-width: 0;
+  display: block; /* Rende il link un blocco solido */
+}
+
+.titolo-link span {
+  display: block;
+  font-size: 18px;
+  color: black; /* O il blu dell'immagine se preferisci */
+  margin-bottom: 5px;
+  /* Se vuoi la linea SEMPRE, mettila qui. Se la vuoi solo all'hover, lascialo così */
+  text-decoration: underline;
+}
+
+.data {
+  color: rgb(114, 114, 114);
+  font-size: small;
+  text-decoration: none;
+}
+
+.descrizione {
+  text-decoration: none;
+}
+
+.padre-loghi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px 300px;
+  margin-bottom: 10px;
+}
+
+.logo1 a img,
+.logo2 a img,
+.logo3 a img,
+.logo4 a img,
+.logo5 a img {
+  width: auto;
+  height: 50px;
+  filter: grayscale(100%) sepia(100%) hue-rotate(190deg) saturate(500%); /* Grigio di base */
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+.logo1 a:hover img,
+.logo2 a:hover img,
+.logo3 a:hover img,
+.logo4 a:hover img,
+.logo5 a:hover img {
+  filter: grayscale(0%); /* Torna a colori */
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+hr {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+.padrerecensioni {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Forza 4 colonne uguali */
+  gap: 15px; /* Spazio tra i box */
+  padding: 10px;
+}
+
+.rec1 p,
+.rec2 p,
+.rec3 p,
+.rec4 p {
+  font-size: 13px; /* Più piccolo per farlo stare bene nei box */
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: rgb(50, 50, 50);
+  margin: 0;
+}
+
+.rec1 {
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.315);
+  font-size: 0.9rem; /* Ridotto da 'large' a una dimensione più piccola */
+  line-height: 1.4;
+  color: rgb(26, 26, 26);
+  padding: 15px;
+  margin: 0;
+}
+
+.rec2 {
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.315);
+  font-size: 0.9rem; /* Ridotto da 'large' a una dimensione più piccola */
+  line-height: 1.4;
+  color: rgb(26, 26, 26);
+  padding: 15px;
+  margin: 0;
+}
+
+.rec3 {
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.315);
+  font-size: 0.9rem; /* Ridotto da 'large' a una dimensione più piccola */
+  line-height: 1.4;
+  color: rgb(26, 26, 26);
+  padding: 15px;
+  margin: 0;
+}
+
+.rec4 {
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.315);
+  font-size: 0.9rem; /* Ridotto da 'large' a una dimensione più piccola */
+  line-height: 1.4;
+  color: rgb(26, 26, 26);
+  padding: 15px;
+  margin: 0;
+}
+
+.HR-prefooter {
+  border: none; /* togli il bordo default */
+  height: 2px; /* spessore */
+  background-color: rgba(128, 128, 128, 0.116); /* colore */
+  margin: 20px 0; /* spazio sopra e sotto */
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: auto;
+  width: auto;
+  padding: 15px 100px;
+  background-color: #e9e7e723;
+}
+
+.footerchild a,
+h4 {
+  color: gray;
+  font-size: small;
+  text-decoration: none;
+}
+
+.footerchild a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: black;
+}
+
+.footerchild p {
+  font-size: small;
+  color: black;
+  justify-content: space-around;
+}
+
+.HR-footer {
+  width: 100%;             /* occupa tutto lo spazio */
+  max-width: 1100px;       /* diamo un limite per non far toccare i bordi estremi */
+  margin: 40px auto;       /* 'auto' la centra orizzontalmente; 40px crea spazio sopra e sotto */
+  border: 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.2); 
+ 
+}
+
+.Spot-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 100px;
+  background-color: #e9e7e723;
+}
+
+/* La riga magica che divide i due blocchi */
+.footer-row {
+  display: flex;
+  justify-content: space-between; /* Spinge i legali a sinistra e la lingua a destra */
+  align-items: flex-start;       /* Allinea tutto in alto */
+}
+
+/* Testi legali piccoli e grigi */
+.spotter-legal h6, 
+.spotter-legal p {
+  color: rgb(114, 114, 114);
+  font-size: 10.5px;
+  margin: 0;
+  line-height: 3;
+  letter-spacing: 1px;
+}
+
+/* Stile per il link della lingua */
+.lang-link {
+  display: flex;           
+  align-items: center;     
+  gap: 8px;                
+  text-decoration: underline;  
+  color: rgb(39, 39, 39); 
+  font-size: 13px;
+  transition: color 0.3s;  
+}
+
+
+.lang-link:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.lang-link img {
+  width: 20px; 
+  height: auto;
+}

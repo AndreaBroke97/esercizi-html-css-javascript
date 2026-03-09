@@ -1,0 +1,23 @@
+
+.body{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.p{
+    color: white;
+    padding: 20px;
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+   body {
+        background-color: lightblue;
+    }
+} 
+
+@media (orientation: landscape) {
+    body {
+        background-color: lightgreen;
+    }
+}

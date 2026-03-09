@@ -1,0 +1,14 @@
+div{
+
+    background-color: gray !important;
+    width: 500px;
+    height: 500px;
+}
+
+.boxclass{
+    background-color: red;
+}
+
+#boxid{
+    background-color: orange;
+}

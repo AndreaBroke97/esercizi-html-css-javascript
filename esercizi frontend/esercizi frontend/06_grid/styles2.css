@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 50px;
+    font-family: sans-serif;
+}
+
+body {
+    width: auto;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    /* Definiamo 5 colonne: la prima da 250px (più larga) e le altre 4 da 1fr */
+    grid-template-columns: 300px repeat(4, 120px); 
+    
+    /* Definiamo 2 righe da 150px l'una */
+    grid-template-rows: repeat(2, 150px);
+    
+    gap: 15px;
+    padding: 10px
+}
+
+.box1 {
+    background-color: red;
+    border-radius: 20px;
+    height: 415px; /* L'ho alzato un po' per pareggiare: 200(nero) + 200(viola) + 15(gap) */
+    
+    /* ECCO LA MAGIA: il box rosso occupa due righe */
+    grid-row: span 3; 
+}
+
+.box2 {
+    background-color: black;
+    border-radius: 20px;
+    height: 150px;
+}
+
+.box3 {
+    background-color: purple;
+    border-radius: 20px;
+    height: 150px;
+}
+
+.box4 {
+    background-color: green;
+    border-radius: 20px;
+    height: 150px;
+}
+
+.box5 {
+    background-color: magenta;
+    border-radius: 20px;
+    height: 150px;
+}
+
+.box6 {
+    background-color: brown;
+      border-radius: 20px;
+    height: 150px;
+}
+
+.box7 {
+    background-color: violet;
+      border-radius: 20px;
+    height: 150px;
+}
+
+.box8 {
+    background-color: rgb(41, 3, 255);
+      border-radius: 20px;
+    height: 150px;
+}
+
+.box9 {
+    background-color: rgb(0, 255, 255);
+    border-radius: 20px;
+    height: 150px;
+}
+
+
+

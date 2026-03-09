@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #eeeeee;
+}
+
+
+.title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 20px;
+}
+
+
+
+.team-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+.card {
+
+    width: 200px;
+    background: white;
+    padding: 20px;
+    text-align: center;
+
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.card p {
+
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+
+
+.avatar {
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+
+.avatar1 {
+    background: #ff6b6b;
+}
+
+.avatar2 {
+    background: #4ecdc4;
+}
+
+.avatar3 {
+    background: #ffe66d;
+}
+
+.avatar4 {
+    background: #5f27cd;
+}
+
+.avatar5 {
+    background: #1dd1a1;
+}
+
+.avatar6 {
+    background: #ff9f43;
+}
+
+.avatar7 {
+    background: #54a0ff;
+}
+
+
+
+@media (max-width:600px) {
+
+    .card {
+        width: 150px;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+}

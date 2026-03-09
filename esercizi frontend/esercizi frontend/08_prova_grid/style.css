@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 500px;
+    height: 800px;
+}
+
+.main{
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.capohero{
+    border: 2px solid rgba(128, 128, 128, 0.116); /* Il tuo bordo */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    height: 280px;
+    padding: 5px 5px;
+}
+
+.hero {
+    display: grid;
+    /* Due colonne: la prima si adatta al contenuto, la seconda è fissa */
+    grid-template-columns: 200px 100px; 
+    /* Due righe da 200px */
+    grid-template-rows: 100px 100px;    
+    grid-gap: 15px;
+    padding: 10px 10px;
+    border: 2px solid rgba(128, 128, 128, 0.116); /* Il tuo bordo */
+    border-radius: 25px;
+    ;
+    
+    
+}
+
+.bikeit {
+    background-color: red;
+    /* Fondamentale: dice al rosso di partire dalla riga 1 e arrivare alla 3 */
+    grid-row: 1 / 3;
+    border-radius: 10px;
+    /* Rimuovi width e height fissi se vuoi che decida la Grid, 
+       oppure lasciali ma assicurati che la Grid sia abbastanza grande */
+}
+
+.bike {
+    background-color: black;
+    border-radius: 10px;
+   
+}
+
+.bike1 {
+    background-color: aqua;
+    border-radius: 10px;
+  
+    /* Non serve il margin-left! La grid lo mette già nella colonna 2 */
+}
+
+.titolo {
+    margin-left: 40px;
+    font-size: small;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+    
+}
+
+.descrizione {
+    line-height: 2;
+    margin-bottom: 40px;
+}
+
+
+
+.cardcapo{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    
+}
+
+.card1 {
+    margin-top: 40px;
+}
